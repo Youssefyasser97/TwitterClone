@@ -1,0 +1,25 @@
+<div class="column">
+    <nav class="panel">
+        <p class="panel-heading">Who to follow</p>
+    <% @users.each do |user| %>
+    <div class="panel-block">
+    <article class="media">
+        <div class="media-left">
+            <figure class="image is-32x32">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSRHvNof9XBbAUDI9sJ9oNDFbYBw-sC_dnzjA&usqp=CAU">
+            </figure>
+        </div>
+        <div class="media-content">
+            <div class="content">
+                <p>
+                <strong><%= user.name %></strong>
+                <small>@<%= user.username%></small>
+                </p>
+            </div>
+        </div>
+    </article>
+</div>
+        <% end %>
+</nav>
+
+</div>
